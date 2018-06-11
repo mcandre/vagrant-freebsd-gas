@@ -5,12 +5,12 @@
 .equ stdout, 1
 .equ kernel, 0x80
 
-msg: .ascii "Hello, World!\n"
+msg: .asciz "Hello World!\n"
 .equ msg_len, .-msg
 
 .text
 
-.globl _start
+.global _start
 
 _start:
   mov $sys_write, %rax

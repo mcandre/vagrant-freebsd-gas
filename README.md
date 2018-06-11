@@ -10,7 +10,7 @@ https://app.vagrantup.com/mcandre/boxes/vagrant-freebsd-gas
 $ cd test
 $ vagrant up
 $ vagrant ssh -c "cd /vagrant && as -o hello.o hello.s && ld -o hello hello.o && ./hello"
-Hello, World!
+Hello World!
 ```
 
 # RUNTIME REQUIREMENTS
